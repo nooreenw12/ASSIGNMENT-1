@@ -232,7 +232,6 @@ section .keynotes{
     gap: 12px;
     /* max-width: 400px; */
     width: 100%;
-   
     /* background: #4070f4; */
     /* border-radius: 50rem; */
     padding: 100px;
@@ -247,26 +246,31 @@ section .keynotes{
     flex:0 0 40%;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
-    border-radius: 7rem;
+    padding: 2rem;
+    padding-top: 2rem;
+    border-radius: 3rem;
     background: rgb(251, 251, 251);
     scroll-snap-align: start;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
   }
   .speaker .image {
-    height: 150px;
-    width: 150px;
+    height: 170px;
+    width: 350px;
     padding: 2px;
     /* background: #4070f4; */
-    border-radius: 50%;
-    position:relative;
-    right: 13.5rem;
+    
+    /* margin-left: 5rem; */
+    border-radius: 5%;
+    border-style: dotted;
+    border-color: var(--colour-blue-light-2);
+    /* position:relative;
+    right: 13.5rem; */
     
   }
   .image img {
-    height: 90%;
-    width: 90%;
-    object-fit: cover;
+    height: 80%;
+    width: 35%;
+    /* object-fit: cover; */
     border-radius: 50%;
     /* border: 5px solid rgb(53, 162, 186); */
 
@@ -274,16 +278,16 @@ section .keynotes{
   .speaker h2 {
     margin-top: 15px;
     position: relative;
-    top: -11rem;
-    left: 5rem;
+    top: -2.5em;
+    /* left: -1rem; */
     color: #333;
     font-size: 22px;
     font-weight: 600;
   }
   .speaker p {
     /* margin-top: 2px; */
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 17px;
+    text-align: center;
     color: #333;
     position: relative;
     top: -5rem;
