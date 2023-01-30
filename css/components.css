@@ -244,7 +244,7 @@ section .keynotes{
 }
 .speaker {
     display: flex;
-    flex: 0 0 40%;
+    flex:0 0 40%;
     flex-direction: column;
     align-items: center;
     padding: 10px;
@@ -268,7 +268,7 @@ section .keynotes{
     width: 90%;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid rgb(53, 162, 186);
+    /* border: 5px solid rgb(53, 162, 186); */
 
   }
   .speaker h2 {
@@ -281,11 +281,12 @@ section .keynotes{
     font-weight: 600;
   }
   .speaker p {
-    margin-top: 4px;
+    /* margin-top: 2px; */
     font-size: 18px;
     font-weight: 400;
     color: #333;
-    text-align: center;
+    position: relative;
+    top: -5rem;
   }
 
 /*************** FOOTER*************/
