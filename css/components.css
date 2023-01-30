@@ -231,11 +231,12 @@ section .keynotes{
     display: flex;
     gap: 12px;
     /* max-width: 400px; */
-    width: 100%;
+    width: 80%;
+    
     /* background: #4070f4; */
-    /* border-radius: 50rem; */
-    padding: 100px;
-    padding-top: 30;
+    /* border-radius: 50%; */
+    padding: 80px;
+    padding: 3rem 0 0 8rem;
     /* scroll-snap-type: x mandatory; */
     /* overflow-x: scroll; */
     /* scroll-padding: 30px; */
@@ -243,16 +244,18 @@ section .keynotes{
 }
 .speaker {
     display: flex;
-    flex:0 0 40%;
+    flex:0 0 30%;
     flex-direction: column;
     align-items: center;
     padding: 2rem;
-    padding-top: 2rem;
+    
     border-radius: 3rem;
     background: rgb(251, 251, 251);
     scroll-snap-align: start;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    
   }
+  
   .speaker .image {
     height: 170px;
     width: 350px;
@@ -292,6 +295,8 @@ section .keynotes{
     position: relative;
     top: -5rem;
   }
+
+  .button-prev
 
 /*************** FOOTER*************/
 .social{
