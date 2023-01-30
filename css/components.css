@@ -1,0 +1,343 @@
+/* LOGO  */
+
+.logo{
+    height: 5rem;
+    margin-top: 1rem;
+}
+
+/* SEARCH */
+
+.search{
+    /* background-color: greenyellow; */
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search__input{
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+
+    background-color: var(--colour-grey-light-3);
+    border: none;
+    padding: 0.7rem 2rem;
+    border-radius: 10px;
+    width: 90%;
+    transition: all .4s;
+
+    /*Moving the margin to the left(-3) so as the button become inside the search bar*/
+    margin-right: -3rem;
+}
+
+/* When focus/click search width increases to 100% */
+.search__input:focus{
+    width: 100;
+    outline: 1px solid var(--colour-blue-light-1);
+}
+
+.search__button{
+    border: none;
+    background-color: var(--colour-grey-light-3);
+    cursor: pointer;
+    color: var(--colour-primary);
+    padding-right: 2rem;
+    
+}
+
+/* Adding the clicking effect on the search button */
+
+.search__button:active{
+    transform: translateY(4px);
+
+}
+/*************** LOG IN & REGISTER *******************/
+/*Adding style to the log in and register button*/
+
+.login__register{
+    /* padding-right: 15px; */
+    padding: 0 2rem;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.login__button{
+    cursor: pointer;
+    border: none;
+    background-color:var(--colour-blue-light-1);
+    border-radius: 2.5rem;
+    text-align: center;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    padding: 0.5rem 2rem;
+    
+}
+.login__button:active{
+    background-color: var(--colour-blue-light-3);
+}
+
+.register__button{
+    cursor: pointer;
+    border: none;
+    background-color:var(--colour-blue-light-1);
+    border-radius: 4rem;
+    text-align: center;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    padding: 0.5rem 2rem;
+}
+
+.register__button:active{
+    background-color:var(--colour-blue-light-3)
+}
+
+
+/*************** SIDEBAR **************/
+.side-nav__item{
+    height: 5rem;
+}
+
+.side-nav__link{
+    position: relative;
+    color: var(--colour-blue-light-3);
+    display:table;
+    width: 300px;
+    padding: 10px;
+    height: 10px;
+}
+
+.side-nav__icon{
+    margin-right: 27rem;
+}
+
+.nav-item{
+    margin-top: -2.5rem;
+    margin-left: -6rem;
+    display: block;
+}
+
+.side-nav__item:hover{
+    height: 5rem;
+    background: rgb(51, 51, 59);
+}
+    
+    
+.sidebar:hover{
+    width: 20rem;
+    transition: all 0.5x ease;
+}
+
+/********CONTAINER *************/
+
+
+
+
+.important_dates{
+    /* display: flex; */
+  background-color: rgb(21, 130, 160);
+  margin-top: 2rem;  
+  margin-left: 17rem;
+  height: 8rem;
+  width: 60rem;
+  align-items: center;
+  transition: width 3s;
+ 
+  
+}
+
+.important_dates:hover{
+   background:var(--colour-blue-light-4);
+   width: 70rem;
+}
+
+.countdown{
+    margin: -4rem;
+    justify-content: center;
+    display: flex;
+    /* transform: scale(1); */
+}
+
+.timer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+}
+
+.timer h2{
+    margin: 10 0 4px;
+}
+
+.important_dates p{
+    font-size: 3.5rem;
+}
+
+.intro{
+    margin-top: -28rem;
+    margin-left:20rem ;
+    margin-right: 10rem;
+    text-align: center;
+    width: 70rem;
+}
+
+h1{
+    color: inherit;
+    font-family: Century Gothic;
+    font-size: 6rem;
+    margin-top: 6rem;
+    margin-left: 45rem;
+    
+}
+
+.intro p{
+    align-items: center;
+    text-align:center;
+    font-size: 15px;
+}
+
+
+h2{
+    color: inherit;
+    font-family: Century Gothic;
+    font-size: 5rem;
+    font-style: bold underline;
+    text-align:center;
+}
+
+/*************** SPEAKERS*************/
+
+::-webkit-scrollbar {
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 25px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #6e93f7;
+    border-radius: 25px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #4070f4;
+}
+
+section .keynotes{
+    display: flex;
+    gap: 12px;
+    /* max-width: 400px; */
+    width: 100%;
+   
+    /* background: #4070f4; */
+    /* border-radius: 50rem; */
+    padding: 100px;
+    padding-top: 30;
+    /* scroll-snap-type: x mandatory; */
+    /* overflow-x: scroll; */
+    /* scroll-padding: 30px; */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+.speaker {
+    display: flex;
+    flex: 0 0 40%;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 7rem;
+    background: rgb(251, 251, 251);
+    scroll-snap-align: start;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  }
+  .speaker .image {
+    height: 150px;
+    width: 150px;
+    padding: 2px;
+    /* background: #4070f4; */
+    border-radius: 50%;
+    position:relative;
+    right: 13.5rem;
+    
+  }
+  .image img {
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid rgb(53, 162, 186);
+
+  }
+  .speaker h2 {
+    margin-top: 15px;
+    position: relative;
+    top: -11rem;
+    left: 5rem;
+    color: #333;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .speaker p {
+    margin-top: 4px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+  }
+
+/*************** FOOTER*************/
+.social{
+   width: 100%; 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-top: 25px ;
+}
+
+.social a{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--colour-blue-light-2);
+    margin:20px;
+    text-align: center;
+
+    
+}
+
+.social .fass{
+    
+    color: aqua;
+    padding: 2rem 2rem;
+    font-size: 5rem;
+    position: relative;
+    justify-content: center;
+   
+}
+
+.copyright{
+    text-align: center;
+    color: var(--colour-primary);
+    padding-top: 1rem;
+}
+
+/*************** GALLERY*************/
+/* 
+.gallery{
+    display: flex;
+  }
+  
+  .gallery__photo1{
+    width:100%;
+    display: block;
+    border: 5rem;
+    border-color: aliceblue;
+  } */
+
+
+
+
+

@@ -1,0 +1,145 @@
+:root{
+    --colour-primary: rgb(167, 169, 172);
+    --colour-primary-light:rgb(99, 100, 102);
+    --colour-primary-dark:rgb(35, 31, 32);
+    --colour-footer:rgb(0,88,138);
+    --colour-blue-light-1:rgb(0,125,190);
+    --colour-blue-light-2:rgb(0,171,189);
+    --colour-blue-light-3:rgb(84,198,211);
+    --colour-blue-light-4:rgb(0,183,199);
+    
+}
+
+/*Resetting everything on the web page*/
+*,
+*::before, 
+*::after
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Specifying that 1rem = 10px*/
+html{
+    font-size: 62.5%;
+    /*default browser font-size is 16px, this means that 1rem = 16px*/
+    /* 62.5/100 *16 = 10px, Now 1rem = 10px */
+
+}
+
+
+body{
+    color: white;
+    font-size:small;
+    font-family: Century Gothic;
+    font-weight: 550;
+    line-height: 2;
+    /* background-image: linear-gradient(to bottom right, var(--colour-blue-light-1), var(--colour-blue-light-4)); */
+    /* background-color:var(--colour-primary-light); */
+    min-height: 100vh;
+    background: radial-gradient(circle,#24246e,#06051f);
+    /* height: 100vh; */
+    
+}
+.wrapper span{
+    position: fixed;
+    top: -120px;
+    height: 50px;
+    width: 50px;
+    z-index: -1;
+    animation: animate 10s linear infinite;    
+}
+.wrapper span:nth-child(1){
+    left: 60px;
+    animation-delay:0.6s;
+    border: 5px solid cyan;
+}
+.wrapper span:nth-child(2){
+    left: 60%;
+    animation-delay: 3s;
+    width: 60px;
+    height: 60px;
+    background: #20b5eb;
+}
+.wrapper span:nth-child(3){
+    left: 20%;
+    animation-delay: 2s;
+    border: 5px solid #fff;    
+}
+.wrapper span:nth-child(4){
+    left: 30%;
+    animation-delay: 5s;
+    width: 80px;
+    height: 80px;
+    background: #7ee1fa;
+}
+.wrapper span:nth-child(5){
+    left: 40%;
+    animation-delay: 1s;
+    border: 5px solid #145481;
+}
+.wrapper span:nth-child(6){
+    left: 50%;
+    animation-delay: 7s;
+    border: 5px solid deepskyblue;
+}
+.wrapper span:nth-child(7){
+    left: 60%;
+    animation-delay: 6s;
+    width: 100px;
+    height: 100px;
+    background: #043399;
+}
+.wrapper span:nth-child(8){
+    left: 70%;
+    animation-delay: 8s;
+    border: 5px solid #bdbdbc;
+}
+.wrapper span:nth-child(9){
+    left: 80%;
+    animation-delay: 6s;
+    width: 90px;
+    height: 90px;
+    background: cyan;
+}
+.wrapper span:nth-child(10){
+    left: 90%;
+    animation-delay: 4s;
+    border: 5px solid #fff;    
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* .content h2{
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #fff;
+    font-family: montserrat;
+    font-size: 80px;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    text-align: center;
+    line-height: 0.9;
+} */
+.content h2 b{
+    -webkit-text-fill-color: transparent;
+    font-size: 65px;
+}
+@keyframes animate{
+    0%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    80%{
+        opacity: 0.7;
+    }
+    100%{
+        transform: translateY(800px) rotate(360deg);
+        opacity: 0;
+    }
+}
