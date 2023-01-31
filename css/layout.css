@@ -38,11 +38,11 @@
 } */
 
 .sidebar{
-    background: #000;
+    /* background: #000; */
     /* flex: 0 0 15%; */
     position: fixed;
     height: 50rem;
-    width: 20rem;
+    width: 5rem;
     overflow: hidden;
     transition: width 0.2s linear;
     margin-top: -10rem;
