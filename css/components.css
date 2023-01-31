@@ -320,14 +320,28 @@ section .keynotes{
     border-radius: 3rem;
 }
 
-.btn{
+.toogle-btn{
     padding: 1rem 3rem;
     cursor: pointer;
     background: transparent;
     border: 0;
     outline: none;
     position: relative;
+}
 
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, var(--colour-blue-light-2), var(--colour-blue-light-1));
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.input-form{
+    
 }
 /*************** FOOTER*************/
 .social{
