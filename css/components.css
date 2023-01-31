@@ -519,7 +519,7 @@ span{
   }
   
 #Travel .image-travel {
-    width: 50%;
+    width: 20%;
     
     flex: 1 1 42rem;
     padding-right: 5rem;
@@ -564,7 +564,7 @@ span{
    display: flex;
    align-items: center;
    justify-content: center;
-   padding-top: 25px ;
+   padding-top: 20px ;
 }
 
 .social a{
