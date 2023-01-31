@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <script src="https://kit.fontawesome.com/8a4f037209.js" crossorigin="anonymous"></script>
-    <title>UDM CyberMeet</title>
+    <title>UDM Cybermeet</title>
 </head>
 <body>
     <div class="wrapper">
@@ -29,17 +29,30 @@
         <div class="login-register">
             <div class="button-box">
             <div id="btn"></div>
-                <button type="button" class="toogle-btn">Log In</button>
-                <button type="button" class="toogle-btn">Register</button>
+                <button type="button" class="toogle-btn" onclick="login()">
+                    Log In
+                </button>
+                <button type="button" class="toogle-btn" onclick="register()">
+                    Register
+                </button>
             </div>
-            <form class="input-form">
+            <form id="login" class="input-form">
                 <input type="text" class="input-field" placeholder="Username" required>
-                <input type="text" class="input-field" placeholder="Enter Passwird" required>
-                <input type="checkbox" class="remember"><span>Remember Password</span>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="checkbox-remember"><span>Remember Password</span>
                 <button type="login" class="login-btn">Log In</button>
             </form>
+
+            <form id="register" class="input-form">
+                <input type="text" class="input-field" placeholder="Username" required>
+                <input type="email" class="input-field" placeholder="Email" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="checkbox-remember"><span>I agree to the terms and conditions</span>
+                <button type="login" class="login-btn">Register</button>
+            </form>
         </div>
-        
     </div>
+
+    <script src="login-register.js"></script>
 </body>
 </html>
